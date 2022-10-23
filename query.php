@@ -2,7 +2,7 @@
 
 /* Establishes a connection with database. First argument is the server name, second is the username for database, third is password (blank for me) and final is the database name 
 */
-$conn = mysqli_connect("localhost","root","","onlinebot");
+$conn = mysqli_connect("localhost","id19745845_arsenebot","3101-Webhost","d19745845_phpbotdb");
 
 // If connection is established succesfully
 if($conn)
