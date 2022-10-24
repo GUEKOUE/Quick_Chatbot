@@ -1,5 +1,5 @@
 # Quick_Chatbot
 
-A quick and simple Chatbot made with PHP and AJAX queries, with the queries selected from a MySQL database.
+A quick and simple Chatbot made with PHP, MySQL and JQuery with AJAX queries to store user messages and retrieve bot replies from the database.
 
 - Live url: https://gdacfullstackapp.000webhostapp.com
