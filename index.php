@@ -31,14 +31,12 @@
                     <div class="messages user-message">
 
                     </div>
-                    <div class="seperator"></div>
                 </div>
 
                 <div class="botSection">
                     <div class="messages bot-reply">
 
                     </div>
-                    <div class="seperator"></div>
                 </div>   -->             
             </div>
 
@@ -66,7 +64,7 @@
 
             $("#send").on("click", function(){
                 $value = $("#userInput").val();
-                $msg = '<div class="userSection">'+'<div class="messages user-message">'+ $value +'</div>'+'<div class="seperator"></div>'+'</div>';
+                $msg = '<div class="messages user-message">'+ $value +'</div>';
                 $("#body").append($msg);
                 
                 // start ajax code
@@ -75,7 +73,7 @@
                     type: 'POST',
                     data: 'messageValue='+$value,
                     success: function(result){
-                        $replay = '<div class="botSection">'+'<div class="messages bot-reply">'+ result +'</div>'+'<div class="seperator"></div>'+'</div>';
+                        $replay = '<div class="userSection">'+'<div class="messages bot-reply">'+ result +'</div>'+'</div>';
                         $("#body").append($replay);
                         // when chat goes down the scroll bar automatically comes to the bottom
                         $("#body").scrollTop($("#body")[0].scrollHeight);
